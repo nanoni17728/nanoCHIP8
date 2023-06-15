@@ -13,8 +13,9 @@
     in {
       devShell = pkgs.mkShell {
         nativeBuildInputs = [
-          pkgs.cmake
           pkgs.clang
+          pkgs.cmake
+          pkgs.ninja
         ];
         buildInputs = [
           pkgs.lldb
