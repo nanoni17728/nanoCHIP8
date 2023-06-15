@@ -4,3 +4,6 @@ build/*
 
 # State serialization from imgui
 imgui.ini
+
+# VSCode stuff
+.vscode
