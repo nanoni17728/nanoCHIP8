@@ -21,7 +21,7 @@
         ];
         shellHook = ''
           if command -v > /dev/null
-            then fish
+            then fish && exit
           fi
         '';
       };
