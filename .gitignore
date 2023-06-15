@@ -1,3 +1,6 @@
 # Ignore build files but keep the folder in the repository with .keep
 build/*
 !build/.keep
+
+# State serialization from imgui
+imgui.ini
