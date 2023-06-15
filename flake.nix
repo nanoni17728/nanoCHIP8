@@ -18,6 +18,10 @@
         ];
         buildInputs = [
           pkgs.lldb
+          # SDL2 pulls xorgproto as a dependency,
+          # which provides GL and X11 includes and libs
+          # so we only need this package
+          pkgs.SDL2
         ];
         shellHook = ''
           if command -v > /dev/null
